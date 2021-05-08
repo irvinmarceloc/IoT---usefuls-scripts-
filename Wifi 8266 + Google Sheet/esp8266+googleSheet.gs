@@ -1,3 +1,10 @@
+/*
+	Este scrip registra lectura de sensores para cargarlo en una hoja de cálculos de google
+	Sensores utilizados 
+		* ccs811 ---> Salidas TVOC y CO2
+		* dht22 ---> Salidas temperatura y humedad
+	Por lo tanto son 4 parametros mas hora y fecha
+*/
 function doGet(e) { 
   Logger.log( JSON.stringify(e) );  // view parameters
   var result = 'Ok'; // assume success
